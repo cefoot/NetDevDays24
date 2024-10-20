@@ -85,7 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.14" />
-    <PackageReference Include="StereoKit" Version="0.3.9" />
+    <PackageReference Include="StereoKit" Version="0.4.0-preview.873" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StereoKit_UWP_TemporaryKey.pfx" />

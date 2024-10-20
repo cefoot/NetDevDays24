@@ -10,7 +10,10 @@
 		<RootNamespace>DevDayTalk</RootNamespace>
 		<ReadOnlyProject>true</ReadOnlyProject>
 
-		<SKOpenXRLoader>Standard</SKOpenXRLoader>
+<!--see https://github.com/StereoKit/StereoKit/discussions/790 on how to get Spaces XR Loader-->
+		
+		<SKOpenXRLoader>Snapdragon</SKOpenXRLoader>
+		
 		<SKAssetFolder>..\..\Assets</SKAssetFolder>
 		<SKAssetDestination>Assets</SKAssetDestination>
 

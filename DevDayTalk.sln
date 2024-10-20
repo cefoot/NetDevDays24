@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{0C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevDayTalk.Android", "Projects\Android\DevDayTalk.Android.csproj", "{946C0310-9A87-4596-AE29-037DADB65073}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevDayTalk.Android-spaces", "Projects\Android\DevDayTalk.Android-spaces.csproj", "{3913DF3E-D506-4D59-B51C-7A50423F9E84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,11 @@ Global
 		{946C0310-9A87-4596-AE29-037DADB65073}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{946C0310-9A87-4596-AE29-037DADB65073}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{946C0310-9A87-4596-AE29-037DADB65073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3913DF3E-D506-4D59-B51C-7A50423F9E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3913DF3E-D506-4D59-B51C-7A50423F9E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3913DF3E-D506-4D59-B51C-7A50423F9E84}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3913DF3E-D506-4D59-B51C-7A50423F9E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3913DF3E-D506-4D59-B51C-7A50423F9E84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +45,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{BA699FE0-BB13-4A05-BA04-97DD6F201D69} = {052359FB-4F66-4EAD-868C-047C32B9FFDA}
 		{946C0310-9A87-4596-AE29-037DADB65073} = {0CA14704-86CF-4E05-BC9A-3C09246D65C5}
+		{3913DF3E-D506-4D59-B51C-7A50423F9E84} = {0CA14704-86CF-4E05-BC9A-3C09246D65C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C2E03AD4-9039-4279-BAAC-838AD2286CC1}

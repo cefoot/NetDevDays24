@@ -18,6 +18,7 @@ namespace DevDayTalk
 			{
 				appName = "DevDayTalk",
 				assetsFolder = "Assets",
+				mode = AppMode.XR
 			};
 			var passthrough = SK.GetOrCreateStepper<PassthroughMetaExt>();
 			if (!SK.Initialize(settings))
@@ -41,30 +42,9 @@ namespace DevDayTalk
 			// Core application loop
 			SK.Run(() =>
 			{
-				if (Device.DisplayBlend == DisplayBlend.Opaque)
+				if ((Device.DisplayBlend == DisplayBlend.Opaque || !passthrough.Enabled) && !Device.Name.ToLower().Contains("moto"))
 					Mesh.Cube.Draw(floorMaterial, floorTransform);
 				boxgame.Step();
-				/*cubePose.position -= Vec3.Forward * Time.Stepf * speed;
-
-				if (Input.Head.position.z < cubePose.position.z)
-				{
-					points--;
-					ResetCubePose(ref cubePose);
-				}
-				for (int i = 0; i < (int)Handed.Max; i++)
-				{
-					if (cube.Bounds.Contains(Input.Hand((Handed)i).Get(FingerId.Index, JointId.Tip).position - cubePose.position))
-					{
-						points++;
-						ResetCubePose(ref cubePose);
-					}
-				}
-				UI.Handle("Cube", ref cubePose, cube.Bounds);
-				cube.Draw(cubePose.ToMatrix());
-
-				UI.WindowBegin("Menu", ref menuPose);
-				UI.Label($"Points:{points}");
-				UI.WindowEnd();*/
 			});
 		}
 
