@@ -14,6 +14,8 @@ The game leverages **Mixed Reality with Passthrough** to create an immersive exp
 
 ## How to Build
 
+### Android
+
 To build the application for an Android VR headset, use the following command:
 
 ```
@@ -21,6 +23,14 @@ dotnet publish -c Release .\Projects\Android\{name}.csproj
 ```
 
 Make sure to replace `{name}` with the actual project name.
+
+### UWP (HoloLens 2 )
+
+To build the application for HoloLens, first you need to generate a 'Certificate.pfx' in the root folder and than execute the following command.
+
+```
+msbuild .\Platforms\UWP\StereoKit_UWP.csproj /p:Platform=ARM64 /p:AppxBundle=Always /p:AppxBundlePlatforms="ARM64" /p:PackageCertificateKeyFile=Certificate.pfx /p:AppxPackageDir=../../OUTPUT_Holo /restore
+```
 
 ## Presentation Link
 
